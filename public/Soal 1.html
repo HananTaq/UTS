@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Nomor 1 Asy-Syahid Abdurrahman Hanan Taqiyya (2436) Pendaftaran Seminar Online</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f5f5f5; 
+        }
+        
+        .banner { 
+            background: #0066ff; 
+            padding: 15px 0; 
+        }
+        
+        marquee { 
+            color: white; 
+            font: bold 22px Arial; 
+        }
+        
+        .header { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 15px; 
+            padding: 30px; 
+        }
+        
+        .logo { 
+            width: 70px; 
+            height: 70px; 
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        h1 { 
+            font-size: 24px; 
+            color: #333; 
+        }
+        
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto 30px; 
+            padding: 40px; 
+            background: white; 
+            border-radius: 8px; 
+        }
+        
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 30px; 
+        }
+        
+        .col { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+        }
+        
+        label { 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            display: block; 
+        }
+        
+        input, select, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+            font-size: 14px; 
+        }
+        
+        textarea { 
+            resize: vertical; 
+            height: 100px; 
+        }
+        
+        .radio { 
+            display: flex; 
+            gap: 20px; 
+        }
+        
+        .radio label { 
+            font-weight: normal; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px;
+            white-space: nowrap;
+        }
+        
+        .actions { 
+            grid-column: 1 / -1; 
+            text-align: center; 
+            margin-top: 30px; 
+        }
+        
+        button { 
+            padding: 12px 35px; 
+            border: none; 
+            border-radius: 4px; 
+            font: bold 16px Arial; 
+            cursor: pointer; 
+            margin: 0 10px; 
+            color: white; 
+        }
+        
+        .btn-primary { background: #0066ff; }
+        .btn-danger { background: #e63946; }
+        
+        @media (max-width: 768px) { 
+            .grid { grid-template-columns: 1fr; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <marquee>DAFTAR SEKARANG UNTUK SEMINAR TEKNOLOGI</marquee>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <img src="logo-unindra.png" alt="Logo UNINDRA">
+        </div>
+        <h1>Formulir Pendaftaran Seminar Online</h1>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="grid">
+                <div class="col">
+                    <div>
+                        <label>Nama Lengkap:</label>
+                        <input type="text" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" placeholder="Masukkan email Anda" required>
+                    </div>
+                    <div>
+                        <label>Nomor HP:</label>
+                        <input type="text" placeholder="Masukkan nomor HP" required>
+                    </div>
+                    <div>
+                        <label>Jenis Kelamin:</label>
+                        <div class="radio">
+                            <label><input type="radio" name="gender" required> Laki-laki</label>
+                            <label><input type="radio" name="gender"> Perempuan</label>
+                            <label><input type="radio" name="gender"> Lainnya</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <label>Pilihan Seminar:</label>
+                        <select required>
+                            <option>Kecerdasan Buatan (AI)</option>
+                            <option>Pengembangan Web</option>
+                            <option>E-Commerce</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Kategori Peserta:</label>
+                        <select required>
+                            <option>Mahasiswa</option>
+                            <option>Dosen</option>
+                            <option>Umum</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Catatan Tambahan:</label>
+                        <textarea placeholder="Tuliskan pesan atau pertanyaan Anda"></textarea>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn-primary">Daftar</button>
+                    <button type="reset" class="btn-danger">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

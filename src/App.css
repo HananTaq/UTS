@@ -1,0 +1,249 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap');
+
+/* =================================== */
+/*          General Styles           */
+/* =================================== */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F6FA; /* Light Grayish Blue */
+  color: #2C3A47; /* Dark Slate Gray */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* =================================== */
+/*        Portfolio Layout           */
+/* =================================== */
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-main {
+  flex-grow: 1;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* =================================== */
+/*        Portfolio Header           */
+/* =================================== */
+.portfolio-header {
+  background: #FFC312; /* Yellow */
+  color: #2C3A47; /* Dark Slate Gray */
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #2C3A47; /* Dark Slate Gray */
+  flex-shrink: 0;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.header-content p {
+  font-size: 1.1em;
+  margin: 0.5rem 0 1rem;
+}
+
+.header-content nav a {
+  color: #2C3A47; /* Dark Slate Gray */
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.header-content nav a:hover {
+  border-bottom: 3px solid #FF6F61; /* Coral Accent */
+}
+
+/* =================================== */
+/*         Project Section           */
+/* =================================== */
+.portfolio-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #2C3A47; /* Dark Slate Gray */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card {
+  background: #FFFFFF; /* White */
+  border: 3px solid #2C3A47; /* Dark Slate Gray */
+  overflow: hidden;
+  box-shadow: 8px 8px 0px #2C3A47; /* Dark Slate Gray */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #FF6F61; /* Coral Accent */
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #2C3A47; /* Dark Slate Gray */
+}
+
+.project-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #2C3A47; /* Dark Slate Gray */
+}
+
+/* =================================== */
+/*       Project Detail Page         */
+/* =================================== */
+.project-detail-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #F5F6FA; /* Light Grayish Blue */
+  color: #2C3A47; /* Dark Slate Gray */
+}
+
+.project-detail-header {
+  background: #FFC312; /* Yellow */
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 3px solid #2C3A47; /* Dark Slate Gray */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.project-detail-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.back-button {
+  color: #2C3A47; /* Dark Slate Gray */
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.back-button:hover {
+  border-bottom: 3px solid #FF6F61; /* Coral Accent */
+}
+
+.view-code-button {
+  background-color: #FF6F61; /* Coral Accent */
+  color: white;
+  border: 3px solid #2C3A47; /* Dark Slate Gray */
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  box-shadow: 4px 4px 0px #2C3A47; /* Dark Slate Gray */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.view-code-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #4ECDC4; /* Medium Turquoise Accent */
+}
+
+.project-detail-content {
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* =================================== */
+/*          Code Viewer              */
+/* =================================== */
+.code-viewer-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.code-viewer-content pre {
+  background-color: #F5F6FA; /* Light Grayish Blue */
+  color: #2C3A47; /* Dark Slate Gray */
+  text-align: left;
+  padding: 1rem;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  flex-grow: 1;
+  overflow: auto;
+  font-size: 1em;
+}
+
+.code-viewer-content code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.soal-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* =================================== */
+/*        Portfolio Footer           */
+/* =================================== */
+.portfolio-footer {
+  background-color: #FFC312; /* Yellow */
+  color: #2C3A47; /* Dark Slate Gray */
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  border-top: 3px solid #2C3A47; /* Dark Slate Gray */
+  flex-shrink: 0;
+}
