@@ -1,8 +1,8 @@
 import './App.css'
 import Layout from './components/Layout';
-import PortfolioHeader from './components/PortfolioHeader';
+import ProjectHeader from './components/ProjectHeader';
 import ProjectGrid from './components/ProjectGrid';
-import PortfolioFooter from './components/PortfolioFooter';
+import ProjectFooter from './components/ProjectFooter';
 
 function App() {
   const imageModules = import.meta.glob('./assets/*', { eager: true, as: 'url' });
@@ -20,11 +20,11 @@ function App() {
 
   return (
     <Layout>
-      <PortfolioHeader />
-      <main className="portfolio-main">
+      <ProjectHeader />
+      <main className="project-main">
         <ProjectGrid projects={projects} />
       </main>
-      <PortfolioFooter />
+      <ProjectFooter />
     </Layout>
   )
 }

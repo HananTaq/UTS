@@ -6,7 +6,7 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div className="portfolio">
+    <div className="project">
       {children}
     </div>
   );

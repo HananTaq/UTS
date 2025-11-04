@@ -1,10 +1,10 @@
-# UTS - Neo-Brutalist Portfolio: Neon Retrofuturistic Dreamscape
+# UTS - Neo-Brutalist Project: Neon Retrofuturistic Dreamscape
 
-This project is a dynamic portfolio website built with React and Vite, showcasing a unique **Neo-Brutalist Neon Retrofuturistic Dreamscape** design. It's crafted to present your web programming assignments (Soal) in an engaging and visually striking manner.
+This project is a dynamic project website built with React and Vite, showcasing a unique **Neo-Brutalist Neon Retrofuturistic Dreamscape** design. It's crafted to present your web programming assignments (Soal) in an engaging and visually striking manner.
 
 ## Project Overview
 
-The portfolio dynamically loads and displays your HTML-based projects, allowing visitors to explore each assignment. A key feature is the integrated code viewer, which enables transparent inspection of the underlying HTML source code for each project, fostering learning and understanding.
+The project dynamically loads and displays your HTML-based projects, allowing visitors to explore each assignment. A key feature is the integrated code viewer, which enables transparent inspection of the underlying HTML source code for each project, fostering learning and understanding.
 
 ## Design Philosophy: Neo-Brutalism Meets Neon Retrofuturism
 
@@ -28,7 +28,7 @@ This combination creates a visually arresting experience that is both functional
 -   **Dynamic Project Loading:** Automatically detects and displays projects from HTML files placed in the `public` folder, making it easy to add new assignments.
 -   **Integrated Code Viewer:** Each project page includes a toggle to switch between the live rendered HTML and its syntax-highlighted source code, powered by `prism-react-renderer`.
 -   **Client-Side Routing:** Seamless navigation between the home page and individual project detail pages using React Router.
--   **Responsive Design:** Ensures the portfolio looks great and functions well across various devices and screen sizes.
+-   **Responsive Design:** Ensures the project looks great and functions well across various devices and screen sizes.
 -   **Vibrant Neo-Brutalist Aesthetic:** A unique and memorable visual style.
 
 ## Technologies Used
@@ -74,4 +74,4 @@ This project is configured for easy deployment to [Vercel](https://vercel.com). 
 
 1.  **Connect your GitHub repository** (`HananTaq/UTS`) to your Vercel account.
 2.  Vercel will automatically detect the Vite configuration.
-3.  Click **Deploy**, and your Neo-Brutalist portfolio will be live!
+3.  Click **Deploy**, and your Neo-Brutalist project will be live!

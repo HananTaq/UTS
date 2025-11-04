@@ -12,7 +12,7 @@ interface ProjectGridProps {
 
 function ProjectGrid({ projects }: ProjectGridProps) {
   return (
-    <section id="projects" className="portfolio-section">
+    <section id="projects" className="project-section">
       <h2>SOAL</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (

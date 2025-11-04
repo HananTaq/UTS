@@ -24,25 +24,25 @@ body {
 }
 
 /* =================================== */
-/*        Portfolio Layout           */
+/*        Project Layout           */
 /* =================================== */
-.portfolio {
+.project {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.portfolio-main {
+.project-main {
   flex-grow: 1;
   padding: 2rem;
   width: 100%;
 }
 
 /* =================================== */
-/*        Portfolio Header           */
+/*        Project Header           */
 /* =================================== */
-.portfolio-header {
+.project-header {
   background: #FFC312; /* Yellow */
   color: #2C3A47; /* Dark Slate Gray */
   padding: 2rem;
@@ -80,7 +80,7 @@ body {
 /* =================================== */
 /*         Project Section           */
 /* =================================== */
-.portfolio-section h2 {
+.project-section h2 {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 2rem;
@@ -236,9 +236,9 @@ body {
 }
 
 /* =================================== */
-/*        Portfolio Footer           */
+/*        Project Footer           */
 /* =================================== */
-.portfolio-footer {
+.project-footer {
   background-color: #FFC312; /* Yellow */
   color: #2C3A47; /* Dark Slate Gray */
   text-align: center;

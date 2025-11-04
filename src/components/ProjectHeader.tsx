@@ -1,8 +1,8 @@
 
 
-function PortfolioHeader() {
+function ProjectHeader() {
   return (
-    <header className="portfolio-header">
+    <header className="project-header">
       <div className="header-content">
         <h1>Asy-Syahid Abdurrahman Hanan Taqiyya</h1>
         <p>NPM: 202343502436 | Kelas: R58</p>
@@ -11,4 +11,4 @@ function PortfolioHeader() {
   );
 }
 
-export default PortfolioHeader;
+export default ProjectHeader;
