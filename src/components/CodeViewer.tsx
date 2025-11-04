@@ -1,4 +1,3 @@
-import React from 'react';
 import { Highlight, themes } from 'prism-react-renderer';
 
 interface CodeViewerProps {
