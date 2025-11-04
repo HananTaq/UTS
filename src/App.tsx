@@ -11,10 +11,11 @@ function App() {
     .filter(([path]) => !path.endsWith('react.svg'))
     .map(([path, url]) => {
       const fileName = path.split('/').pop()?.split('.')[0] || 'Project';
+      const slug = fileName.replace(/_/g, ' ').toLowerCase().replace(/\s+/g, '-');
       return { 
         name: fileName.replace(/_/g, ' '),
         imageUrl: url, 
-        pathName: fileName
+        pathName: slug
       };
     });
 

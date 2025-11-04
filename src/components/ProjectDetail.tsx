@@ -3,25 +3,29 @@ import { useState, useEffect } from 'react';
 import CodeViewer from './CodeViewer';
 
 function ProjectDetail() {
-  const { projectName } = useParams();
+  const { projectSlug } = useParams();
   const [showCode, setShowCode] = useState(false);
   const [htmlCode, setHtmlCode] = useState('');
   const [htmlFileExists, setHtmlFileExists] = useState(false);
 
+  const projectName = projectSlug?.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+
   const htmlFilePath = `/${projectName}.html`;
 
   useEffect(() => {
-    fetch(htmlFilePath)
-      .then(response => {
-        if (response.ok) {
-          setHtmlFileExists(true);
-          return response.text();
-        } else {
-          setHtmlFileExists(false);
-          return '';
-        }
-      })
-      .then(text => setHtmlCode(text));
+    if (projectName) {
+      fetch(htmlFilePath)
+        .then(response => {
+          if (response.ok) {
+            setHtmlFileExists(true);
+            return response.text();
+          } else {
+            setHtmlFileExists(false);
+            return '';
+          }
+        })
+        .then(text => setHtmlCode(text));
+    }
   }, [projectName, htmlFilePath]);
 
   const renderContent = () => {
@@ -32,7 +36,7 @@ function ProjectDetail() {
       return (
         <>
           <img src={imageUrl} alt={projectName} className="project-detail-image" />
-          <p>This is the detail page for {projectName?.replace(/_/g, ' ')}.</p>
+          <p>This is the detail page for {projectName}.</p>
           <p>No HTML file found for this project.</p>
         </>
       );
@@ -43,7 +47,7 @@ function ProjectDetail() {
     <div className="project-detail-page">
       <header className="project-detail-header">
         <Link to="/" className="back-button">← Back</Link>
-        <h1>{projectName?.replace(/_/g, ' ')}</h1>
+        <h1>{projectName}</h1>
         {htmlFileExists && (
           <button onClick={() => setShowCode(!showCode)} className="view-code-button">
             {showCode ? 'View Page' : 'View Code'}
