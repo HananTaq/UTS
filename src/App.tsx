@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import ProjectHeader from './components/ProjectHeader';
 import ProjectGrid from './components/ProjectGrid';
 import ProjectFooter from './components/ProjectFooter';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const imageModules = import.meta.glob('./assets/*', { eager: true, as: 'url' });
@@ -26,6 +27,7 @@ function App() {
         <ProjectGrid projects={projects} />
       </main>
       <ProjectFooter />
+      <Analytics />
     </Layout>
   )
 }
